@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order delicious food online from FoodHub. Fast delivery, great prices, and amazing taste!">
+    <meta name="keywords" content="food delivery, online food, restaurant, order food, foodhub">
+    <meta name="author" content="FoodHub">
+    <title>FoodHub - Online Food Ordering System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-utensils"></i>
+                <span>FoodHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="cart.html" class="nav-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="animate-text">Delicious Food</span>
+                <span class="animate-text">Delivered Fast</span>
+            </h1>
+            <p class="hero-subtitle">Order your favorite meals online and get them delivered to your doorstep</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Order Now</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose FoodHub?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your food delivered within 30 minutes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Quality Food</h3>
+                    <p>Fresh ingredients and delicious recipes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Secure Payment</h3>
+                    <p>Multiple payment options available</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Call us anytime: +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="starters">Starters</button>
+                <button class="filter-btn" data-category="main_courses">Main Courses</button>
+                <button class="filter-btn" data-category="salads">Salads</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+                <button class="filter-btn" data-category="vegan_specials">Vegan Specials</button>
+                <button class="filter-btn" data-category="sandwiches">Sandwiches</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About FoodHub</h2>
+                    <p>We are passionate about delivering the best food experience to our customers. Our team of expert chefs creates delicious meals using fresh, high-quality ingredients.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Menu Items</p>
+                        </div>
+                        <div class="stat">
+                            <h3>30min</h3>
+                            <p>Delivery Time</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/restaurant.jpg" alt="Restaurant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 7016688687</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>kuldeepvanani0@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>191 shree saivila residency, surat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="process/contact.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <span class="error" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <span class="error" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}">
+                            <span class="error" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <span class="error" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <div class="btn-loader"></div>
+                        </button>
+                        <div id="formSuccess" class="success-message">
+                            Your message has been sent successfully!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FoodHub</h3>
+                    <p>Delivering happiness one meal at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 7016688687</p>
+                    <p><i class="fas fa-envelope"></i> kuldeepvanani0@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 191 shree saivila residency, surat</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FoodHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: ₹<span id="cartTotal">0.00</span></h3>
+            </div>
+            <button id="checkoutBtn" class="btn btn-primary">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+</body>
+</html>
